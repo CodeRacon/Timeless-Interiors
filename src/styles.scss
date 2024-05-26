@@ -38,6 +38,10 @@ h1 {
   font-family: "Ovo";
   color: #2e2e2e;
   font-size: 4.75rem;
+
+  @media (width <= 600px) {
+    font-size: 3.75rem;
+  }
 }
 
 h2 {
