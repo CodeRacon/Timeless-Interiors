@@ -1,0 +1,41 @@
+section.imprint-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: #b1aea6;
+  color: #2e2e2e;
+
+  .imprint-txt {
+    width: 80%;
+
+    h2 {
+      width: 100%;
+      font-family: "Ovo";
+      text-align: left;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      opacity: 0.45;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-weight: 300;
+    }
+    span {
+      font-family: "Ovo";
+      font-size: 1.25rem;
+    }
+
+    a {
+      font-weight: 500;
+      color: #c0704b;
+    }
+  }
+}
+
+.img-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
