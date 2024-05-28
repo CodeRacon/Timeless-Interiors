@@ -1,3 +1,58 @@
+// mixins
+@mixin sectionFlexColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  color: #2e2e2e;
+}
+
+@mixin sectionTxt {
+  width: 100%;
+
+  p {
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+  span {
+    font-family: "Ovo";
+    font-size: 1.25rem;
+  }
+
+  em {
+    font-weight: 500;
+  }
+}
+
+@mixin sectionImg {
+  width: 50%;
+  max-width: calc(512px + 2rem);
+  float: left;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+
+  @media (width <= 425px) {
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  img {
+    max-width: 512px;
+    object-fit: contain;
+  }
+}
+
+@mixin sectionHeading {
+  width: 100%;
+  font-family: "Ovo";
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  opacity: 0.45;
+}
+
+// ###############################
+
 * {
   margin: 0;
   box-sizing: border-box;

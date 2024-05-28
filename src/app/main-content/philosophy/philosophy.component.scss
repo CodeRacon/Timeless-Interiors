@@ -1,52 +1,18 @@
+@import "../../../styles.scss";
+
 section.philosophy {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
+  @include sectionFlexColumn;
   background-color: #e6e4de;
-  color: #2e2e2e;
 
   h2 {
-    width: 100%;
-    font-family: "Ovo";
-    text-align: left;
-    margin-bottom: 2rem;
-    font-weight: 400;
-    opacity: 0.45;
+    @include sectionHeading;
   }
 
   .philo-txt {
-    width: 100%;
-
-    p {
-      font-family: "Montserrat";
-      font-weight: 300;
-    }
-    span {
-      font-family: "Ovo";
-      font-size: 1.25rem;
-    }
-
-    em {
-      font-weight: 500;
-    }
+    @include sectionTxt;
   }
 
   .philo-img {
-    width: 50%;
-    max-width: calc(512px + 2rem);
-    float: left;
-    padding-right: 2rem;
-    padding-bottom: 0.5rem;
-
-    @media (width <= 425px) {
-      padding-right: 1rem;
-      padding-bottom: 0rem;
-    }
-
-    img {
-      max-width: 512px;
-      object-fit: contain;
-    }
+    @include sectionImg;
   }
 }
